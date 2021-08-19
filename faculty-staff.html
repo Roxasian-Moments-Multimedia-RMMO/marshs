@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SHS Faculty and Staff • Manuel A. Roxas HS</title>
+    <title>Faculty and Staff • Manuel A. Roxas HS</title>
     <!-- OPEN GRAPH META TAGS -->
     <meta property="og:title" content="Welcome to Manuel A. Roxas HS" />
     <meta property="og:description" content="Welcome to the website of Manuel A. Roxas High School" />
@@ -14,9 +14,9 @@
     <meta property="og:image:height" content="300" />
     <meta property="og:type" content="website">
     <!-- META TAGS -->
-    <meta content="Vincent Ferrer" name="author">
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <meta name="author" content="Vincent Ferrer">
+    <meta name="description" content="Manuel A. Roxas High School is a high school located in Paco, Manila. It is one of the six schools in Manila to provide the Special Science course for selected students.">
+    <meta name="keywords" content="">
     <!-- ICON -->
     <link rel="shortcut icon" href="assets/img/favicons/fav_icon.ico" type="image/x-icon">
     <!-- FONTS -->
@@ -35,11 +35,11 @@
     <!-- MAIN CSS FILE --> 
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- =======================================================
-    * MARHS WEBSITE ver. 004 (ALPHA REVISED)
-    * Author : Vincent Ferrer
+    * MARHS WEBSITE ver. 005 (ALPHA REVISED)
+    * Developer : RMMO ICT WebDev Team
     * Ask Vincent Ferrer for changes/updates
-    * SHS FACULTY AND STAFF PAGE
-    ======================================================== -->   
+    * FACULTY AND STAFF PAGE
+    ======================================================== --> 
 </head>
 <body>
     <!-- ===== TOP BAR ===== -->
@@ -60,7 +60,7 @@
     <!-- ====== HEADER ===== -->
     <header id="header" class="header d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
-            <img class="logo" src="assets/img/header/roxas_banner.png" alt="MARHS Banner">
+            <img class="logo" src="https://i.ibb.co/kyPjYqp/roxas-banner.png" alt="MARHS Banner">
             <!-- ===== NAVIGATION BAR ===== -->
             <nav id="navbar" class="navbar">
                 <ul>
@@ -68,7 +68,7 @@
                     <li class="dropdown"><a class="nav-link active" href="school-profile"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
                       <ul>
                         <li><a class="nav-link" href="principal's-statement">Principal's Message</a></li>
-                        <li><a href="#">History</a></li>
+                        <li><a href="history">History</a></li>
                         <li><a href="school-profile">School Profile</a></li>
                         <li><a class="active" style="pointer-events: none;" href="faculty-staff">Faculty and Staff</a></li>
                       </ul>
@@ -76,7 +76,7 @@
                     <li class="dropdown"><a class="nav-link" href="programs"><span>Programs</span> <i class="bi bi-chevron-down"></i></a>
                       <ul>
                         <li><a href="programs-shs">Senior High School</a></li>
-                        <li><a href="#">Junior High School</a></li>
+                        <li><a href="programs-jhs">Junior High School</a></li>
                         <li><a href="#">Alternative Learning System (ALS)</a></li>
                       </ul>
                     </li>
@@ -85,8 +85,8 @@
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
         </div>
-    </header> 
-    <main id="main">    
+    </header>    
+    <main id="main">
         <!-- ====== PARALLAX HERO ===== -->
         <section id="school-profile-hero" class="school-profile-hero jarallax d-flex align-items-center justify-content-center" data-jarallax>
             <div class="container flex-column d-flex align-items-center justify-content-center">
@@ -106,11 +106,12 @@
                 <h2>Faculty and Staff</h2>
             </div>
         </section>
+        <!-- SHS FACULTY AND STAFF -->        
         <section id="shs-faculty-staff" class="shs-faculty-staff">
             <div class="container">
-                <div class="section-title">
-                    <h2 data-aos="fade-in">Senior High School Department</h2>
-                    <p data-aos="fade-in">Welcome! We are pleased to introduce you our senior high school faculty members! </p>
+                <div class="section-title" data-aos="zoom-out">
+                    <h2>Senior High School Department</h2>
+                    <p>Welcome! We are pleased to introduce you our senior high school faculty members! </p>
                 </div>
                 <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
                     <div class="col-xl-3 col-lg-4 col-md-6">
@@ -568,8 +569,7 @@
                     </div>
                 </div>                
             </div>
-        </section>     
-                    
+        </section> 
         <!-- MANTRA CALL TO ACTION -->
         <section class="mantra-cta jarallax" data-jarallax>
             <div class="container">
@@ -583,8 +583,8 @@
                     </div>
                 </div>
             </div>
-        </section>                   
-    </main>  
+        </section>                
+    </main> 
     <!-- FOOTER -->
     <footer id="footer" class="footer">
         <div class="footer-top">
@@ -612,7 +612,7 @@
     </footer>             
     <!-- PRELOADER AND BACK TO TOP BUTTON -->
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>        
+    <a style="cursor: pointer;" onClick="scrollSmoothTo('topbar')" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>      
     <!-- VENDOR/PLUGINS JS FILES -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/fontawesome/all.min.js"></script>
@@ -624,6 +624,6 @@
     <script src="assets/vendor/jarallax/jarallax-element.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <!-- MAIN JS FILE -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>       
 </body>
 </html>
