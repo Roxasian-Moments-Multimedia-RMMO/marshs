@@ -225,6 +225,33 @@
       disableVideo: false
   });
   /**
+   * 
+   */
+   window.addEventListener('load', () => {
+    let portfolioContainer = select('.events-container');
+    if (portfolioContainer) {
+      let portfolioIsotope = new Isotope(portfolioContainer, {
+        itemSelector: '.event-item',
+        layoutMode: 'fitRows'
+      });
+
+      let portfolioFilters = select('#events-filter li', true);
+
+      on('click', '#events-filter li', function(e) {
+        e.preventDefault();
+        portfolioFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+        portfolioIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+        aos_init();
+      }, true);
+    }  
+  
+  /**
    * FADE OUT ON SCROLL
    */
    var header = document.getElementById('hero-content');
