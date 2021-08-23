@@ -225,8 +225,8 @@
       disableVideo: false
   });
   /**
-   * FILTER
-   */  
+   * EVENT FILTERS
+   */
    window.addEventListener('load', () => {
     let portfolioContainer = select('.events-container');
     if (portfolioContainer) {
