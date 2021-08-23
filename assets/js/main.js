@@ -225,8 +225,8 @@
       disableVideo: false
   });
   /**
-   * 
-   */
+   * FILTER
+   */  
    window.addEventListener('load', () => {
     let portfolioContainer = select('.events-container');
     if (portfolioContainer) {
@@ -249,8 +249,9 @@
         });
         aos_init();
       }, true);
-    }  
-  
+    }
+
+  });
   /**
    * FADE OUT ON SCROLL
    */
