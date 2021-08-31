@@ -2214,6 +2214,9 @@ section.principal-statement {
 /*--------------------------------------------------------------
 # EVENTS/ANNOUNCEMENT/NEWS
 --------------------------------------------------------------*/
+.events {
+    padding: 145px 0 0 0;
+}
 
 #events-filter {
     padding: 0;
