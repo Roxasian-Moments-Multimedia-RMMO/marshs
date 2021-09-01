@@ -2621,7 +2621,7 @@ section.principal-statement {
 
 @media (max-height: 600px) {
   .rm {
-    height: 120vh;
+    height: 100%;
   }
 }
 
