@@ -11402,6 +11402,9 @@ textarea.form-control-lg {
   clear: both;
 }
 
+.form-group {
+  margin-bottom: 1rem
+}
 
 
 /*# sourceMappingURL=bootstrap.css.map */
