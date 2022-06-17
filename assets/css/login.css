@@ -1506,3 +1506,11 @@ span.error:after {
     display: none;
   }
 }
+
+@media (max-width: 400px) {
+  .banner-login img {
+    width: 300px;
+    height: auto;
+  }
+}
+  
